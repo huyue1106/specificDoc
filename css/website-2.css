@@ -1,0 +1,29 @@
+.copy-code-button{position:absolute;right:14px;background-color:#9E9E9E;color:white;border-radius:0px 0px 0px 5px;border:1px solid rgb(150,150,150);z-index:1;font-size:80%;}
+.book-body .markdown-section blockquote{padding:15px 15px 3px;margin-bottom:15px;}
+a[target="_blank"]::after{font-family:FontAwesome;content:"\f08e";margin-left:2px;position:relative;top:2px;}
+code.lang-nocopy{color:#8e908c;}
+h1,h2,h3{border-bottom:1px solid #eee;padding-bottom:.25em;}
+.book.font-family-1{font-family:"Open Sans","Clear Sans","Helvetica Neue",Helvetica,Arial,sans-serif;}
+.book-header{position:relative;}
+.book-header .ribbon-toolbar,a.ribbon{display:none;}
+#feedback-wrap{text-align:center;border-top:1px solid #eee;width:200px;margin:0 auto;  /* box-shadow: 0 0 20px #999; */margin-bottom:20px;position:relative;padding-top:20px;}
+#feedback-wrap:hover{}
+#feedback-wrap img{width:150px;height:155px;  /* opacity:0; */transition:opacity 1s;  /* position: absolute; */bottom:10px;left:0;}
+#feedback-wrap:hover img{opacity:1;}
+#feedback-wrap p{}
+div#book-search-input{position:absolute;right:18px;top:0;border:none;}
+div#book-search-input input,div#book-search-input input:hover{padding-left:20px;width:20px;transition:width 250ms ease-in-out,border-color 250ms ease-in-out;border-bottom:1px solid transparent;}
+div#book-search-input input:focus{padding-left:20px;width:150px;border-bottom:1px solid rgba(0,0,0,.07);}
+div#book-search-input::after{font:normal normal normal 14px/1 FontAwesome;content:"\f002";display:inline-block;position:absolute;left:6px;top:18px;pointer-events:none;cursor:pointer;}
+
+/* tguide wxapp side */
+#feedback-wrap{position:fixed;right:50px;bottom:98px;background-color:#fafafa;border:1px solid rgba(0,0,0,.07);border-radius:1px;-webkit-box-shadow:0 6px 12px rgba(0,0,0,.175);box-shadow:0 6px 12px rgba(0,0,0,.175);background-clip:padding-box;z-index:999;cursor:default;font-size:12px;padding:5px 10px 5px;color:#364149;width:auto;line-height:1.7;}
+#feedback-wrap img{display:none;}
+#feedback-wrap p{display:none;}
+#feedback-wrap:hover p,#feedback-wrap.hover p{display:block;}
+#feedback-wrap:hover .fa,#feedback-wrap.hover .fa{display:none;}
+#feedback-wrap:hover img,#feedback-wrap.hover img{display:block;}
+.is-outer .is-outer-or-inner-start~*{display:none;}
+.is-outer .is-outer-or-inner-end~*{display:block;}
+.is-inner .is-outer-or-inner-start~*{display:block;}
+.is-inner .is-outer-or-inner-end~*{display:none;}

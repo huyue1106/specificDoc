@@ -1,0 +1,858 @@
+<!DOCTYPE HTML>
+<html lang="zh-hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <title>抽奖组件 · TGideas文档库</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="">
+    <meta name="generator" content="GitBook 3.2.3">
+    <link rel="stylesheet" href="css/style.css" tppabs="https://tgideas.qq.com/doc/frontend/gitbook/style.css">
+    <link rel="stylesheet" href="css/plugin.css" tppabs="https://tgideas.qq.com/doc/frontend/gitbook/gitbook-plugin-ribbon/plugin.css">
+    <link rel="stylesheet" href="css/plugin-1.css" tppabs="https://tgideas.qq.com/doc/frontend/gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+    <link rel="stylesheet" href="css/style-1.css" tppabs="https://tgideas.qq.com/doc/frontend/gitbook/gitbook-plugin-alerts/style.css">
+    <link rel="stylesheet" href="css/search.css" tppabs="https://tgideas.qq.com/doc/frontend/gitbook/gitbook-plugin-search-pro/search.css">
+    <link rel="stylesheet" href="css/toggle.css" tppabs="https://tgideas.qq.com/doc/frontend/gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+    <link rel="stylesheet" href="css/website.css" tppabs="https://tgideas.qq.com/doc/frontend/gitbook/gitbook-plugin-highlight/website.css">
+    <link rel="stylesheet" href="css/website-1.css" tppabs="https://tgideas.qq.com/doc/frontend/gitbook/gitbook-plugin-fontsettings/website.css">
+    <link rel="stylesheet" href="css/website-2.css" tppabs="https://tgideas.qq.com/doc/frontend/styles/website.css">
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="tgtest-ignore" content="all">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="next" href="txplayer.html" />
+    <link rel="prev" href="tglogin.html" />
+</head>
+
+<body>
+    <div class="book">
+        <div class="book-summary">
+            <div id="book-search-input" role="search">
+                <input type="text" placeholder="输入并搜索" />
+            </div>
+            <nav role="navigation">
+                <ul class="summary">
+                    <li class="chapter " data-level="1.1" data-path="../../">
+                        <a href="index-1.htm" tppabs="https://tgideas.qq.com/doc/frontend/">
+            
+                    
+                    快速上手掌握
+            
+                </a>
+                        <ul class="articles">
+                            <li class="chapter " data-level="1.1.1" data-path="../../start/pc.html">
+                                <a href="pc.html" tppabs="https://tgideas.qq.com/doc/frontend/start/pc.html">
+            
+                    
+                    PC端专题
+            
+                </a>
+                            </li>
+                            <li class="chapter " data-level="1.1.2" data-path="../../start/mobile.html">
+                                <a href="mobile.html" tppabs="https://tgideas.qq.com/doc/frontend/start/mobile.html">
+            
+                    
+                    移动端专题
+            
+                </a>
+                            </li>
+                            <li class="chapter " data-level="1.1.3" data-path="../../start/workflow.html">
+                                <a href="workflow.html" tppabs="https://tgideas.qq.com/doc/frontend/start/workflow.html">
+            
+                    
+                    双端官网
+            
+                </a>
+                            </li>
+                            <li class="chapter " data-level="1.1.4">
+                                <a target="_blank" href="javascript:if(confirm(%27https://tgideas.qq.com/weweb/tech/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27https://tgideas.qq.com/weweb/tech/%27" tppabs="https://tgideas.qq.com/weweb/tech/">
+            
+                    
+                    微社区技术规范站
+            
+                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="chapter " data-level="1.2" data-path="../../spec/common/">
+                        <a href="index-2.htm" tppabs="https://tgideas.qq.com/doc/frontend/spec/common/">
+            
+                    
+                    页面规范
+            
+                </a>
+                        <ul class="articles">
+                            <li class="chapter " data-level="1.2.1" data-path="../../spec/common/info.html">
+                                <a href="info.html" tppabs="https://tgideas.qq.com/doc/frontend/spec/common/info.html">
+            
+                    
+                    页面头部
+            
+                </a>
+                            </li>
+                            <li class="chapter " data-level="1.2.2" data-path="../../spec/common/html.html">
+                                <a href="html.html" tppabs="https://tgideas.qq.com/doc/frontend/spec/common/html.html">
+            
+                    
+                    HTML
+            
+                </a>
+                            </li>
+                            <li class="chapter " data-level="1.2.3" data-path="../../spec/common/css.html">
+                                <a href="css.html" tppabs="https://tgideas.qq.com/doc/frontend/spec/common/css.html">
+            
+                    
+                    CSS
+            
+                </a>
+                            </li>
+                            <li class="chapter " data-level="1.2.4" data-path="../../spec/common/image.html">
+                                <a href="image.html" tppabs="https://tgideas.qq.com/doc/frontend/spec/common/image.html">
+            
+                    
+                    图片处理
+            
+                </a>
+                            </li>
+                            <li class="chapter " data-level="1.2.5" data-path="../../spec/common/name.html">
+                                <a href="name.html" tppabs="https://tgideas.qq.com/doc/frontend/spec/common/name.html">
+            
+                    
+                    注释与命名
+            
+                </a>
+                            </li>
+                            <li class="chapter " data-level="1.2.6" data-path="../../spec/common/datareport.html">
+                                <a href="datareport.html" tppabs="https://tgideas.qq.com/doc/frontend/spec/common/datareport.html">
+            
+                    
+                    数据统计
+            
+                </a>
+                            </li>
+                            <li class="chapter " data-level="1.2.7" data-path="../../spec/common/files.html">
+                                <a href="files.html" tppabs="https://tgideas.qq.com/doc/frontend/spec/common/files.html">
+            
+                    
+                    文件目录
+            
+                </a>
+                            </li>
+                            <li class="chapter " data-level="1.2.8">
+                                <span>
+            
+                    
+                    ----PC端----
+            
+                </span>
+                            </li>
+                            <li class="chapter " data-level="1.2.9" data-path="../pc/title.html">
+                                <a href="title.html" tppabs="https://tgideas.qq.com/doc/frontend/component/pc/title.html">
+            
+                    
+                    公用头部
+            
+                </a>
+                            </li>
+                            <li class="chapter " data-level="1.2.10" data-path="../../spec/pc/compatibility.html">
+                                <a href="compatibility.html" tppabs="https://tgideas.qq.com/doc/frontend/spec/pc/compatibility.html">
+            
+                    
+                    页面兼容
+            
+                </a>
+                            </li>
+                            <li class="chapter " data-level="1.2.11" data-path="../../spec/pc/share.html">
+                                <a href="share.html" tppabs="https://tgideas.qq.com/doc/frontend/spec/pc/share.html">
+            
+                    
+                    页面分享
+            
+                </a>
+                            </li>
+                            <li class="chapter " data-level="1.2.12">
+                                <span>
+            
+                    
+                    ----移动端----
+            
+                </span>
+                            </li>
+                            <li class="chapter " data-level="1.2.13" data-path="../../spec/m/design.html">
+                                <a href="design.html" tppabs="https://tgideas.qq.com/doc/frontend/spec/m/design.html">
+            
+                    
+                    设计规范
+            
+                </a>
+                            </li>
+                            <li class="chapter " data-level="1.2.14" data-path="../../spec/m/compatibility.html">
+                                <a href="compatibility-1.html" tppabs="https://tgideas.qq.com/doc/frontend/spec/m/compatibility.html">
+            
+                    
+                    页面兼容
+            
+                </a>
+                            </li>
+                            <li class="chapter " data-level="1.2.15" data-path="../../spec/m/layout.html">
+                                <a href="layout.html" tppabs="https://tgideas.qq.com/doc/frontend/spec/m/layout.html">
+            
+                    
+                    rem布局
+            
+                </a>
+                            </li>
+                            <li class="chapter " data-level="1.2.16" data-path="../../spec/m/video.html">
+                                <a href="video.html" tppabs="https://tgideas.qq.com/doc/frontend/spec/m/video.html">
+            
+                    
+                    视频音频规范
+            
+                </a>
+                            </li>
+                            <li class="chapter " data-level="1.2.17" data-path="../../spec/m/font.html">
+                                <a href="font.html" tppabs="https://tgideas.qq.com/doc/frontend/spec/m/font.html">
+            
+                    
+                    移动端字体使用规范
+            
+                </a>
+                            </li>
+                            <li class="chapter " data-level="1.2.18" data-path="../../spec/m/share.html">
+                                <a href="share-1.html" tppabs="https://tgideas.qq.com/doc/frontend/spec/m/share.html">
+            
+                    
+                    微信/手Q分享
+            
+                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="chapter " data-level="1.3" data-path="../../spec/special/">
+                        <a href="index-3.htm" tppabs="https://tgideas.qq.com/doc/frontend/spec/special/">
+            
+                    
+                    特殊规范
+            
+                </a>
+                        <ul class="articles">
+                            <li class="chapter " data-level="1.3.1" data-path="../../spec/special/fn.html">
+                                <a href="fn.html" tppabs="https://tgideas.qq.com/doc/frontend/spec/special/fn.html">
+            
+                    
+                    堡垒之夜重构规范
+            
+                </a>
+                            </li>
+                            <li class="chapter " data-level="1.3.2" data-path="../../spec/special/lol.html">
+                                <a href="lol.html" tppabs="https://tgideas.qq.com/doc/frontend/spec/special/lol.html">
+            
+                    
+                    英雄联盟重构规范
+            
+                </a>
+                            </li>
+                            <li class="chapter " data-level="1.3.3" data-path="../../spec/special/agent.html">
+                                <a href="agent.html" tppabs="https://tgideas.qq.com/doc/frontend/spec/special/agent.html">
+            
+                    
+                    本地文件代理
+            
+                </a>
+                            </li>
+                            <li class="chapter " data-level="1.3.4" data-path="../../spec/special/k7.html">
+                                <a href="k7.html" tppabs="https://tgideas.qq.com/doc/frontend/spec/special/k7.html">
+            
+                    
+                    K7产品重构规范
+            
+                </a>
+                            </li>
+                            <li class="chapter " data-level="1.3.5" data-path="../../spec/special/qqx5.html">
+                                <a href="qqx5.html" tppabs="https://tgideas.qq.com/doc/frontend/spec/special/qqx5.html">
+            
+                    
+                    QQ炫舞&炫舞梦工厂重构规范
+            
+                </a>
+                            </li>
+                            <li class="chapter " data-level="1.3.6" data-path="../../spec/special/qhyx.html">
+                                <a href="qhyx.html" tppabs="https://tgideas.qq.com/doc/frontend/spec/special/qhyx.html">
+            
+                    
+                    枪火游侠重构规范
+            
+                </a>
+                            </li>
+                            <li class="chapter " data-level="1.3.7" data-path="../../spec/special/xinyue.html">
+                                <a href="xinyue.html" tppabs="https://tgideas.qq.com/doc/frontend/spec/special/xinyue.html">
+            
+                    
+                    心悦活动重构规范
+            
+                </a>
+                            </li>
+                            <li class="chapter " data-level="1.3.8" data-path="../../spec/special/website.html">
+                                <a href="website.html" tppabs="https://tgideas.qq.com/doc/frontend/spec/special/website.html">
+            
+                    
+                    双端官网规范
+            
+                </a>
+                            </li>
+                            <li class="chapter " data-level="1.3.9" data-path="../../spec/special/ingame.html">
+                                <a href="ingame.html" tppabs="https://tgideas.qq.com/doc/frontend/spec/special/ingame.html">
+            
+                    
+                    微社区活动专题
+            
+                </a>
+                            </li>
+                            <li class="chapter " data-level="1.3.10" data-path="../../spec/special/booking.html">
+                                <a href="booking.html" tppabs="https://tgideas.qq.com/doc/frontend/spec/special/booking.html">
+            
+                    
+                    预约专题规范
+            
+                </a>
+                            </li>
+                            <li class="chapter " data-level="1.3.11" data-path="../../spec/special/webgame.html">
+                                <a href="webgame.html" tppabs="https://tgideas.qq.com/doc/frontend/spec/special/webgame.html">
+            
+                    
+                    页游官网规范
+            
+                </a>
+                            </li>
+                            <li class="chapter " data-level="1.3.12" data-path="../../spec/special/concheck.html">
+                                <a href="concheck.html" tppabs="https://tgideas.qq.com/doc/frontend/spec/special/concheck.html">
+            
+                    
+                    内容检查
+            
+                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="divider"></li>
+                    <li class="chapter " data-level="2.1" data-path="./">
+                        <a href="index-4.htm" tppabs="https://tgideas.qq.com/doc/frontend/component/common/">
+            
+                    
+                    常用组件
+            
+                </a>
+                        <ul class="articles">
+                            <li class="chapter " data-level="2.1.1" data-path="foot.html">
+                                <a href="foot.html" tppabs="https://tgideas.qq.com/doc/frontend/component/common/foot.html">
+            
+                    
+                    通用foot
+            
+                </a>
+                            </li>
+                            <li class="chapter " data-level="2.1.2" data-path="milo.html">
+                                <a href="milo.html" tppabs="https://tgideas.qq.com/doc/frontend/component/common/milo.html">
+            
+                    
+                    Milo
+            
+                </a>
+                            </li>
+                            <li class="chapter " data-level="2.1.3" data-path="milo-login.html">
+                                <a href="milo-login.html" tppabs="https://tgideas.qq.com/doc/frontend/component/common/milo-login.html">
+            
+                    
+                    Milo-登录
+            
+                </a>
+                            </li>
+                            <li class="chapter " data-level="2.1.4" data-path="tglogin.html">
+                                <a href="tglogin.html" tppabs="https://tgideas.qq.com/doc/frontend/component/common/tglogin.html">
+            
+                    
+                    TGLogin.js
+            
+                </a>
+                            </li>
+                            <li class="chapter active" data-level="2.1.5" data-path="lottery.html">
+                                <a href="lottery.html" tppabs="https://tgideas.qq.com/doc/frontend/component/common/lottery.html">
+            
+                    
+                    抽奖组件
+            
+                </a>
+                            </li>
+                            <li class="chapter " data-level="2.1.6" data-path="txplayer.html">
+                                <a href="txplayer.html" tppabs="https://tgideas.qq.com/doc/frontend/component/common/txplayer.html">
+            
+                    
+                    腾讯视频
+            
+                </a>
+                            </li>
+                            <li class="chapter " data-level="2.1.7" data-path="danmu.html">
+                                <a href="danmu.html" tppabs="https://tgideas.qq.com/doc/frontend/component/common/danmu.html">
+            
+                    
+                    弹幕组件
+            
+                </a>
+                            </li>
+                            <li class="chapter " data-level="2.1.8" data-path="../pc/showdialog.html">
+                                <a href="showdialog.html" tppabs="https://tgideas.qq.com/doc/frontend/component/pc/showdialog.html">
+            
+                    
+                    弹出层
+            
+                </a>
+                            </li>
+                            <li class="chapter " data-level="2.1.9" data-path="../pc/tab.html">
+                                <a href="tab.html" tppabs="https://tgideas.qq.com/doc/frontend/component/pc/tab.html">
+            
+                    
+                    TAB切换
+            
+                </a>
+                            </li>
+                            <li class="chapter " data-level="2.1.10" data-path="../pc/scroll.html">
+                                <a href="scroll.html" tppabs="https://tgideas.qq.com/doc/frontend/component/pc/scroll.html">
+            
+                    
+                    图片滚动
+            
+                </a>
+                            </li>
+                            <li class="chapter " data-level="2.1.11" data-path="../pc/delayload.html">
+                                <a href="delayload.html" tppabs="https://tgideas.qq.com/doc/frontend/component/pc/delayload.html">
+            
+                    
+                    延迟加载
+            
+                </a>
+                            </li>
+                            <li class="chapter " data-level="2.1.12" data-path="../pc/sns.html">
+                                <a href="sns.html" tppabs="https://tgideas.qq.com/doc/frontend/component/pc/sns.html">
+            
+                    
+                    SNS分享
+            
+                </a>
+                            </li>
+                            <li class="chapter " data-level="2.1.13" data-path="tgAds.html">
+                                <a href="tgAds.html" tppabs="https://tgideas.qq.com/doc/frontend/component/common/tgAds.html">
+            
+                    
+                    广告轮播组件
+            
+                </a>
+                            </li>
+                            <li class="chapter " data-level="2.1.14" data-path="../pc/scroller.html">
+                                <a href="scroller.html" tppabs="https://tgideas.qq.com/doc/frontend/component/pc/scroller.html">
+            
+                    
+                    边栏垂直滚动导航
+            
+                </a>
+                            </li>
+                            <li class="chapter " data-level="2.1.15">
+                                <span>
+            
+                    
+                    ------移动端------
+            
+                </span>
+                            </li>
+                            <li class="chapter " data-level="2.1.16" data-path="../m/mmd.html">
+                                <a href="mmd.html" tppabs="https://tgideas.qq.com/doc/frontend/component/m/mmd.html">
+            
+                    
+                    移动端视频组件
+            
+                </a>
+                            </li>
+                            <li class="chapter " data-level="2.1.17" data-path="../m/loteryround.html">
+                                <a href="loteryround.html" tppabs="https://tgideas.qq.com/doc/frontend/component/m/loteryround.html">
+            
+                    
+                    移动端圆盘抽奖
+            
+                </a>
+                            </li>
+                            <li class="chapter " data-level="2.1.18" data-path="../m/imagepreview.html">
+                                <a href="imagepreview.html" tppabs="https://tgideas.qq.com/doc/frontend/component/m/imagepreview.html">
+            
+                    
+                    移动端图片预览器
+            
+                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="chapter " data-level="2.2" data-path="../../tool/">
+                        <a href="index-5.htm" tppabs="https://tgideas.qq.com/doc/frontend/tool/">
+            
+                    
+                    工具/系统
+            
+                </a>
+                        <ul class="articles">
+                            <li class="chapter " data-level="2.2.1" data-path="../../spec/common/tgtest.html">
+                                <a href="tgtest.html" tppabs="https://tgideas.qq.com/doc/frontend/spec/common/tgtest.html">
+            
+                    
+                    TGtest修复指引
+            
+                </a>
+                            </li>
+                            <li class="chapter " data-level="2.2.2" data-path="../pc/jslab.html">
+                                <a href="jslab.html" tppabs="https://tgideas.qq.com/doc/frontend/component/pc/jslab.html">
+            
+                    
+                    JS库CDN地址
+            
+                </a>
+                            </li>
+                            <li class="chapter " data-level="2.2.3" data-path="../../tool/imagecompress.html">
+                                <a href="imagecompress.html" tppabs="https://tgideas.qq.com/doc/frontend/tool/imagecompress.html">
+            
+                    
+                    图片压缩
+            
+                </a>
+                            </li>
+                            <li class="chapter " data-level="2.2.4" data-path="../../tool/gicpnews.html">
+                                <a href="gicpnews.html" tppabs="https://tgideas.qq.com/doc/frontend/tool/gicpnews.html">
+            
+                    
+                    GICP(v4)新闻填充
+            
+                </a>
+                            </li>
+                            <li class="chapter " data-level="2.2.5" data-path="../../tool/amstpltool.html">
+                                <a href="amstpltool.html" tppabs="https://tgideas.qq.com/doc/frontend/tool/amstpltool.html">
+            
+                    
+                    AMS模版工具
+            
+                </a>
+                            </li>
+                            <li class="chapter " data-level="2.2.6" data-path="../../tool/amstplrel.html">
+                                <a href="amstplrel.html" tppabs="https://tgideas.qq.com/doc/frontend/tool/amstplrel.html">
+            
+                    
+                    AMS模版字段
+            
+                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="chapter " data-level="2.3" data-path="../../explore/">
+                        <a href="index-6.htm" tppabs="https://tgideas.qq.com/doc/frontend/explore/">
+            
+                    
+                    拓展阅读
+            
+                </a>
+                        <ul class="articles">
+                            <li class="chapter " data-level="2.3.1" data-path="../../spec/special/safe.html">
+                                <a href="safe.html" tppabs="https://tgideas.qq.com/doc/frontend/spec/special/safe.html">
+            
+                    
+                    前端安全指引
+            
+                </a>
+                            </li>
+                            <li class="chapter " data-level="2.3.2" data-path="../../explore/performance.html">
+                                <a href="performance.html" tppabs="https://tgideas.qq.com/doc/frontend/explore/performance.html">
+            
+                    
+                    移动端页面性能优化指引
+            
+                </a>
+                            </li>
+                            <li class="chapter " data-level="2.3.3" data-path="../../explore/viewport.html">
+                                <a href="viewport.html" tppabs="https://tgideas.qq.com/doc/frontend/explore/viewport.html">
+            
+                    
+                    viewport知识
+            
+                </a>
+                            </li>
+                            <li class="chapter " data-level="2.3.4" data-path="../../explore/layout.html">
+                                <a href="layout-1.html" tppabs="https://tgideas.qq.com/doc/frontend/explore/layout.html">
+            
+                    
+                    移动端页面适配
+            
+                </a>
+                            </li>
+                            <li class="chapter " data-level="2.3.5" data-path="../../explore/event.html">
+                                <a href="event.html" tppabs="https://tgideas.qq.com/doc/frontend/explore/event.html">
+            
+                    
+                    移动端事件介绍
+            
+                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="divider"></li>
+                    <li class="chapter " data-level="3.1" data-path="../../changelog.html">
+                        <a href="changelog.html" tppabs="https://tgideas.qq.com/doc/frontend/changelog.html">
+            
+                    
+                    更新日志
+            
+                </a>
+                    </li>
+                    <li class="chapter " data-level="3.2">
+                        <a target="_blank" href="9c08" tppabs="https://wj.qq.com/s/860179/9c08">
+            
+                    
+                    问题反馈
+            
+                </a>
+                    </li>
+                    <li class="divider"></li>
+                    <li class="chapter " data-level="4.1">
+                        <a target="_blank" href="index.htm" tppabs="https://tgideas.qq.com/doc/">
+            
+                    
+                    文档库首页
+            
+                </a>
+                    </li>
+                    <li class="chapter " data-level="4.2">
+                        <a target="_blank" href="javascript:if(confirm(%27https://tgideas.qq.com/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27https://tgideas.qq.com/%27" tppabs="https://tgideas.qq.com/">
+            
+                    
+                    TGideas博客
+            
+                </a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="javascript:if(confirm(%27https://www.gitbook.com/  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27https://www.gitbook.com/%27" tppabs="https://www.gitbook.com/" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="book-body">
+            <div class="body-inner">
+                <div class="book-header" role="navigation">
+                    <!-- Title -->
+                    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="index-1.htm" tppabs="https://tgideas.qq.com/doc/frontend/component/.." >抽奖组件</a>
+    </h1>
+                </div>
+                <div class="page-wrapper" tabindex="-1" role="main">
+                    <div class="page-inner">
+                        <div id="book-search-results">
+                            <div class="search-noresults">
+                                <section class="normal markdown-section">
+                                    <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i>
+                                        <ul>
+                                            <li><span class="title-icon "></span><a href="#&#x62BD;&#x5956;&#x7EC4;&#x4EF6;"><b></b>&#x62BD;&#x5956;&#x7EC4;&#x4EF6;</a></li>
+                                            <ul>
+                                                <li><span class="title-icon "></span><a href="#&#x7EC4;&#x4EF6;&#x4FE1;&#x606F;"><b></b>&#x7EC4;&#x4EF6;&#x4FE1;&#x606F;</a></li>
+                                                <ul>
+                                                    <li><span class="title-icon "></span><a href="#&#x7EC4;&#x4EF6;cdn&#xFF1A;"><b></b>&#x7EC4;&#x4EF6;CDN&#xFF1A;</a></li>
+                                                    <li><span class="title-icon "></span><a href="#&#x53C2;&#x6570;&#x8BF4;&#x660E;"><b></b>&#x53C2;&#x6570;&#x8BF4;&#x660E;</a></li>
+                                                </ul>
+                                                <li><span class="title-icon "></span><a href="#&#x65B9;&#x5F62;&#x62BD;&#x5956;&#x4EE3;&#x7801;&#x793A;&#x4F8B;"><b></b>[&#x65B9;&#x5F62;&#x62BD;&#x5956;]&#x4EE3;&#x7801;&#x793A;&#x4F8B;</a></li>
+                                                <li><span class="title-icon "></span><a href="#&#x5706;&#x5F62;&#x62BD;&#x5956;&#x4EE3;&#x7801;&#x793A;&#x4F8B;"><b></b>[&#x5706;&#x5F62;&#x62BD;&#x5956;]&#x4EE3;&#x7801;&#x793A;&#x4F8B;</a></li>
+                                            </ul>
+                                        </ul>
+                                    </div><a href="#&#x62BD;&#x5956;&#x7EC4;&#x4EF6;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a>
+                                    <h1 id="&#x62BD;&#x5956;&#x7EC4;&#x4EF6;"><a name="&#x62BD;&#x5956;&#x7EC4;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x62BD;&#x5956;&#x7EC4;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x62BD;&#x5956;&#x7EC4;&#x4EF6;</h1>
+                                    <p>&#x4F7F;&#x7528;&#x573A;&#x666F;&#xFF1A;PC&#x7AEF;&#x548C;&#x79FB;&#x52A8;&#x7AEF;
+                                        <br>&#x6D4F;&#x89C8;&#x5668;&#x517C;&#x5BB9;&#x60C5;&#x51B5;&#xFF1A;
+                                        <br>&#x65B9;&#x5F62;&#x62BD;&#x5956;&#xFF1A;IE7/IE8/IE9/IE10/IE11/CHROME/FIREFOX/SAFARI &#x7B49;&#x6D4F;&#x89C8;&#x5668;
+                                        <br>&#x5706;&#x5F62;&#x62BD;&#x5956;&#xFF1A;&#x6682;&#x4E0D;&#x652F;&#x6301;IE8&#x53CA;&#x4EE5;&#x4E0B;&#x7248;&#x672C; </p>
+                                    <h2 id="&#x7EC4;&#x4EF6;&#x4FE1;&#x606F;"><a name="&#x7EC4;&#x4EF6;&#x4FE1;&#x606F;" class="anchor-navigation-ex-anchor" href="#&#x7EC4;&#x4EF6;&#x4FE1;&#x606F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7EC4;&#x4EF6;&#x4FE1;&#x606F;</h2>
+                                    <h3 id="&#x7EC4;&#x4EF6;cdn&#xFF1A;"><a name="&#x7EC4;&#x4EF6;cdn&#xFF1A;" class="anchor-navigation-ex-anchor" href="#&#x7EC4;&#x4EF6;cdn&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7EC4;&#x4EF6;CDN&#xFF1A;</h3>
+                                    <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;//game.gtimg.cn/images/js/delottery/lottery.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+                                    <p>&#x7F16;&#x7801;&#x683C;&#x5F0F;&#xFF1A;gbk</p>
+                                    <h3 id="&#x53C2;&#x6570;&#x8BF4;&#x660E;"><a name="&#x53C2;&#x6570;&#x8BF4;&#x660E;" class="anchor-navigation-ex-anchor" href="#&#x53C2;&#x6570;&#x8BF4;&#x660E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53C2;&#x6570;&#x8BF4;&#x660E;</h3>
+                                    <ul>
+                                        <li>width:Number &#x5BBD;&#x5EA6;&#xFF1B;&#x9ED8;&#x8BA4;&#x503C;:800</li>
+                                        <li>height:Number &#x9AD8;&#x5EA6;&#xFF1B;&#x9ED8;&#x8BA4;&#x503C;:660</li>
+                                        <li>contentId:String &#x5D4C;&#x5165;&#x62BD;&#x5956;&#x6A21;&#x5757;&#x7684;div&#x5C42;&#x7684;id&#xFF1B;&#x9ED8;&#x8BA4;&#x503C;:swfcontent</li>
+                                        <li>onClickRollEvent:Function &#x70B9;&#x51FB;&#x5F00;&#x59CB;&#x62BD;&#x5956;&#xFF0C;&#x8C03;&#x7528;&#x7684;&#x51FD;&#x6570;&#xFF1B;&#x5177;&#x4F53;&#x503C;&#x53C2;&#x770B;&#x793A;&#x4F8B;&#xFF1B;</li>
+                                        <li>onCompleteRollEvent:Function &#x62BD;&#x5956;&#x52A8;&#x753B;&#x7ED3;&#x675F;&#x65F6;&#x8C03;&#x7528;&#x7684;&#x51FD;&#x6570;&#xFF1B;&#x5177;&#x4F53;&#x503C;&#x53C2;&#x770B;&#x793A;&#x4F8B;&#xFF1B;</li>
+                                    </ul>
+                                    <h4 id="&#x65B9;&#x5F62;&#x62BD;&#x5956;&#x7279;&#x6709;&#x53C2;&#x6570;"><a name="&#x65B9;&#x5F62;&#x62BD;&#x5956;&#x7279;&#x6709;&#x53C2;&#x6570;" class="anchor-navigation-ex-anchor" href="#&#x65B9;&#x5F62;&#x62BD;&#x5956;&#x7279;&#x6709;&#x53C2;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>[&#x65B9;&#x5F62;&#x62BD;&#x5956;]&#x7279;&#x6709;&#x53C2;&#x6570;</h4>
+                                    <ul>
+                                        <li>lighturl:String &#x5916;&#x90E8;&#x5149;&#x5708;png&#xFF0C;&#x4E0D;&#x586B;&#x5199;&#x5C31;&#x7528;&#x9ED8;&#x8BA4;&#x7684;&#x6548;&#x679C;&#xFF1B;&#x9ED8;&#x8BA4;&#x503C;:&apos;&apos;</li>
+                                        <li>starturl:String &#x5916;&#x90E8;&#x6309;&#x94AE;png&#x4E0D;&#x586B;&#x5199;&#x5C31;&#x7528;&#x9ED8;&#x8BA4;&#x7684;&#x6309;&#x94AE;&#x6548;&#x679C;&#xFF1B;&#x9ED8;&#x8BA4;&#x503C;:&apos;&apos;</li>
+                                        <li>total:Number &#x62BD;&#x5956;&#x4EA7;&#x54C1;&#x7684;&#x603B;&#x6570;&#xFF1B;&#x9ED8;&#x8BA4;&#x503C;:18</li>
+                                        <li>sbtnx:Number &#x5F00;&#x59CB;&#x62BD;&#x5956;&#x6309;&#x94AE;&#x7684;&#x4F4D;&#x7F6E;x&#x5750;&#x6807;&#xFF1B;&#x9ED8;&#x8BA4;&#x503C;:239</li>
+                                        <li>sbtny:Number &#x5F00;&#x59CB;&#x62BD;&#x5956;&#x6309;&#x94AE;&#x7684;&#x4F4D;&#x7F6E;y&#x5750;&#x6807;&#xFF1B;&#x9ED8;&#x8BA4;&#x503C;:130</li>
+                                        <li>sbtnw:Number &#x5F00;&#x59CB;&#x62BD;&#x5956;&#x6309;&#x94AE;&#x7684;&#x5BBD;&#x5EA6;&#xFF1B;&#x9ED8;&#x8BA4;&#x503C;:320</li>
+                                        <li>sbtnh:Number &#x5F00;&#x59CB;&#x62BD;&#x5956;&#x6309;&#x94AE;&#x7684;&#x9AD8;&#x5EA6;&#xFF1B;&#x9ED8;&#x8BA4;&#x503C;:100</li>
+                                        <li>boxw:Number &#x5956;&#x54C1;&#x5149;&#x6548;&#x7684;&#x5BBD;&#x5EA6;&#xFF1B;&#x9ED8;&#x8BA4;&#x503C;:100</li>
+                                        <li>boxh:Number &#x5956;&#x54C1;&#x5149;&#x6548;&#x7684;&#x9AD8;&#x5EA6;&#xFF1B;&#x9ED8;&#x8BA4;&#x503C;:100</li>
+                                        <li>position:String &#x5956;&#x54C1;&#x5149;&#x6548;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x5BF9;&#x5E94;&#x5956;&#x54C1;&#x56FE;&#x7247;&#x7684;&#x5E03;&#x5C40;&#xFF0C;&#x586B;&#x5165;&#x6BCF;&#x4E2A;&#x5956;&#x54C1;&#x7684;&#x4F4D;&#x7F6E;&#x4EE5;&#x53CA;&#x89D2;&#x5EA6;&#x7528;&#x9017;&#x53F7;&#x5206;&#x5272;x_y_rotation&#xFF08;&#x89D2;&#x5EA6;&#x4E3A;0&#x7684;&#x53EF;&#x4EE5;&#x4E0D;&#x586B;&#x5199;&#xFF09;&#x4F8B;&#x5982;19_20&#x6216;&#x8005;19_20_0&#x8868;&#x793A;&#x7B2C;&#x4E00;&#x4E2A;&#x5956;&#x54C1;&#x7684;&#x4F4D;&#x7F6E;x&#x5750;&#x6807;&#x4E3A;19px y&#x5750;&#x6807;&#x4E3A;20px&#x89D2;&#x5EA6;&#x4E3A;0&#x3002;&#xFF09;&#xFF1B;&#x9ED8;&#x8BA4;&#x503C;:19_20, 128_20, 348_19, 569_239, 679_239</li>
+                                    </ul>
+                                    <h4 id="&#x5706;&#x5F62;&#x62BD;&#x5956;&#x7279;&#x6709;&#x53C2;&#x6570;"><a name="&#x5706;&#x5F62;&#x62BD;&#x5956;&#x7279;&#x6709;&#x53C2;&#x6570;" class="anchor-navigation-ex-anchor" href="#&#x5706;&#x5F62;&#x62BD;&#x5956;&#x7279;&#x6709;&#x53C2;&#x6570;"><i class="fa fa-link" aria-hidden="true"></i></a>[&#x5706;&#x5F62;&#x62BD;&#x5956;]&#x7279;&#x6709;&#x53C2;&#x6570;</h4>
+                                    <ul>
+                                        <li>r:Number &#x5956;&#x54C1;&#x603B;&#x6570;&#xFF1B;&#x9ED8;&#x8BA4;&#x503C;:null</li>
+                                        <li>s:String &#x5F00;&#x59CB;&#x62BD;&#x5956;&#x6309;&#x94AE;&#x56FE;&#x7247;&#x8DEF;&#x5F84;&#xFF1B;&#x9ED8;&#x8BA4;&#x503C;:&apos;&apos;</li>
+                                        <li>bx:Number &#x5706;&#x76D8;&#x7684;&#x56FE;&#x7247;&#x4F4D;&#x7F6E;x&#x5750;&#x6807;&#xFF1B;&#x9ED8;&#x8BA4;&#x503C;:0</li>
+                                        <li>by:Number &#x5706;&#x76D8;&#x7684;&#x56FE;&#x7247;&#x4F4D;&#x7F6E;y&#x5750;&#x6807;&#xFF1B;&#x9ED8;&#x8BA4;&#x503C;:0</li>
+                                        <li>sx:Number &#x5F00;&#x59CB;&#x62BD;&#x5956;&#x6309;&#x94AE;x&#x5750;&#x6807;&#xFF1B;&#x9ED8;&#x8BA4;&#x503C;:0</li>
+                                        <li>sy:Number &#x5F00;&#x59CB;&#x62BD;&#x5956;&#x6309;&#x94AE;y&#x5750;&#x6807;&#xFF1B;&#x9ED8;&#x8BA4;&#x503C;:0</li>
+                                    </ul>
+                                    <h2 id="&#x65B9;&#x5F62;&#x62BD;&#x5956;&#x4EE3;&#x7801;&#x793A;&#x4F8B;"><a name="&#x65B9;&#x5F62;&#x62BD;&#x5956;&#x4EE3;&#x7801;&#x793A;&#x4F8B;" class="anchor-navigation-ex-anchor" href="#&#x65B9;&#x5F62;&#x62BD;&#x5956;&#x4EE3;&#x7801;&#x793A;&#x4F8B;"><i class="fa fa-link" aria-hidden="true"></i></a>[&#x65B9;&#x5F62;&#x62BD;&#x5956;]&#x4EE3;&#x7801;&#x793A;&#x4F8B;</h2>
+                                    <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+    <span class="hljs-selector-class">.lottery</span> {<span class="hljs-attribute">position</span>: relative;<span class="hljs-attribute">width</span>: <span class="hljs-number">800px</span>;<span class="hljs-attribute">height</span>: <span class="hljs-number">360px</span>;<span class="hljs-attribute">margin-top</span>: <span class="hljs-number">20px</span>;<span class="hljs-attribute">margin-left</span>: <span class="hljs-number">20px</span>;}
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;lottery&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;lotterycontent&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;//ossweb-img.qq.com/images/js/delottery/lotterybg.jpg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&apos;&#x5956;&#x54C1;&apos;</span> <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;800&quot;</span> <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;360&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;//game.gtimg.cn/images/js/delottery/lottery.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
+    <span class="hljs-comment">//&#x70B9;&#x51FB;&#x5F00;&#x59CB;&#x62BD;&#x5956; &#x901A;&#x77E5;js flash-&gt;js</span>
+
+    <span class="hljs-comment">//&#x5F00;&#x59CB;&#x62BD;&#x5956;lottery-&gt;js</span>
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">callJsToStart</span><span class="hljs-params">()</span> </span>{
+        lottery.disable();
+        calllotteryToRoll(<span class="hljs-number">4</span>);
+    }
+    <span class="hljs-comment">//&#x5F00;&#x53D1;&#x83B7;&#x5F97;&#x62BD;&#x5956;&#x7ED3;&#x679C; &#x901A;&#x77E5;lottery&#x5F00;&#x59CB;&#x64AD;&#x653E;&#x6548;&#x679C; js-&gt;lottery</span>
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">calllotteryToRoll</span><span class="hljs-params">(id)</span> </span>{
+        <span class="hljs-keyword">if</span> (lottery) lottery.stopRoll(id);
+    }
+    <span class="hljs-comment">//&#x52A8;&#x753B;&#x5B8C;&#x6210;&#x901A;&#x77E5;js lottery-&gt;js        </span>
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">callJsToComplete</span><span class="hljs-params">()</span> </span>{
+        alert(<span class="hljs-string">&apos;&#x606D;&#x559C;&#x4F60;&#x83B7;&#x5F97;&#x5927;&#x5956;&#x54DF;&#xFF01;&#xFF01;&apos;</span>);
+    }
+
+    <span class="hljs-comment">//&#x521D;&#x59CB;&#x5316;&#x62BD;&#x5956;&#x7684; &#x53EF;&#x4EE5;&#x4E0D;&#x77E5;&#x9053;&#x5185;&#x90E8;</span>
+    <span class="hljs-keyword">var</span> lottery = <span class="hljs-keyword">new</span> Lottery({
+        <span class="hljs-string">&apos;lighturl&apos;</span>: <span class="hljs-string">&apos;//ossweb-img.qq.com/images/js/delottery/sel.png&apos;</span>,<span class="hljs-comment">//&#x5916;&#x90E8;&#x5149;&#x5708;png &#x4E0D;&#x586B;&#x5199;&#x5C31;&#x7528;&#x9ED8;&#x8BA4;&#x7684;&#x6548;&#x679C;</span>
+        <span class="hljs-string">&apos;starturl&apos;</span>: <span class="hljs-string">&apos;//ossweb-img.qq.com/images/js/delottery/blankstartbtn.png&apos;</span>, <span class="hljs-comment">//&#x5916;&#x90E8;&#x6309;&#x94AE;png &#x4E0D;&#x586B;&#x5199;&#x5C31;&#x7528;&#x9ED8;&#x8BA4;&#x7684;&#x6309;&#x94AE;&#x6548;&#x679C;</span>
+        <span class="hljs-string">&apos;width&apos;</span>: <span class="hljs-number">800</span>,<span class="hljs-comment">//lottery &#x5BBD;&#x5EA6;</span>
+        <span class="hljs-string">&apos;height&apos;</span>: <span class="hljs-number">360</span>,<span class="hljs-comment">//lottery &#x9AD8;&#x5EA6;</span>
+        <span class="hljs-string">&apos;total&apos;</span>: <span class="hljs-number">18</span>,<span class="hljs-comment">//&#x62BD;&#x5956;&#x4EA7;&#x54C1;&#x7684;&#x603B;&#x6570;</span>
+        <span class="hljs-string">&apos;sbtnx&apos;</span>: <span class="hljs-number">239</span>,<span class="hljs-comment">// &#x5F00;&#x59CB;&#x62BD;&#x5956;&#x6309;&#x94AE;&#x7684;&#x4F4D;&#x7F6E;x&#x5750;&#x6807;</span>
+        <span class="hljs-string">&apos;sbtny&apos;</span>: <span class="hljs-number">130</span>,<span class="hljs-comment">// &#x5F00;&#x59CB;&#x62BD;&#x5956;&#x6309;&#x94AE;&#x7684;&#x4F4D;&#x7F6E;y&#x5750;&#x6807;</span>
+        <span class="hljs-string">&apos;sbtnw&apos;</span>: <span class="hljs-number">320</span>,<span class="hljs-comment">// &#x5F00;&#x59CB;&#x62BD;&#x5956;&#x6309;&#x94AE;&#x7684;&#x5BBD;&#x5EA6;</span>
+        <span class="hljs-string">&apos;sbtnh&apos;</span>: <span class="hljs-number">100</span>,<span class="hljs-comment">// &#x5F00;&#x59CB;&#x62BD;&#x5956;&#x6309;&#x94AE;&#x7684;&#x9AD8;&#x5EA6;</span>
+        <span class="hljs-string">&apos;boxw&apos;</span>: <span class="hljs-number">100</span>,<span class="hljs-comment">// &#x5956;&#x54C1;&#x5149;&#x6548;&#x7684;&#x5BBD;&#x5EA6;</span>
+        <span class="hljs-string">&apos;boxh&apos;</span>: <span class="hljs-number">100</span>,<span class="hljs-comment">//&#x5956;&#x54C1;&#x5149;&#x6548;&#x7684;&#x9AD8;&#x5EA6; </span>
+        <span class="hljs-string">&apos;position&apos;</span>: <span class="hljs-string">&quot;19_20,128_20,238_20,348_19,459_19,568_19,679_19,19_129,128.8_129,568_129,678_129,19_240,128_240,238_240,349_240,459_239,569_239,679_239&quot;</span>,
+        <span class="hljs-comment">//&#x5956;&#x54C1;&#x5149;&#x6548;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x5BF9;&#x5E94;&#x5956;&#x54C1;&#x56FE;&#x7247;&#x7684;&#x5E03;&#x5C40;&#xFF0C;&#x586B;&#x5165;&#x6BCF;&#x4E2A;&#x5956;&#x54C1;&#x7684;&#x4F4D;&#x7F6E;&#x4EE5;&#x53CA;&#x89D2;&#x5EA6;&#x7528;&#x9017;&#x53F7;&#x5206;&#x5272; x_y &#x4F8B;&#x5982;19_20&#x6216;&#x8005;19_20_0 &#x8868;&#x793A;&#x7B2C;&#x4E00;&#x4E2A;&#x5956;&#x54C1;&#x7684;&#x4F4D;&#x7F6E; x&#x5750;&#x6807;&#x4E3A;19px y&#x5750;&#x6807;&#x4E3A;20px &#x89D2;&#x5EA6;&#x4E3A;0&#x3002;&#xFF09;</span>
+        <span class="hljs-string">&apos;contentId&apos;</span>: <span class="hljs-string">&apos;lotterycontent&apos;</span>,<span class="hljs-comment">//&#x5D4C;&#x5165;lottery &#x7684;div&#x5C42;&#x7684; id </span>
+        <span class="hljs-string">&apos;onClickRollEvent&apos;</span>: callJsToStart,<span class="hljs-comment">//&#x5BF9;&#x5E94;&#x4E0A;&#x9762;&#x63A5;&#x53E3;</span>
+        <span class="hljs-string">&apos;onCompleteRollEvent&apos;</span>: callJsToComplete <span class="hljs-comment">//&#x5BF9;&#x5E94;&#x4E0A;&#x9762;&#x63A5;&#x53E3;</span>
+    });
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+                                    <p>&#x7528;&#x6CD5;&#x793A;&#x4F8B;&#xFF1A;<strong><a href="javascript:if(confirm(%27http://game.gtimg.cn/images/js/delottery/index.html  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://game.gtimg.cn/images/js/delottery/index.html#square%27" tppabs="http://game.gtimg.cn/images/js/delottery/index.html#square" target="_blank">http://game.gtimg.cn/images/js/delottery/index.html#square</a></strong></p>
+                                    <h2 id="&#x5706;&#x5F62;&#x62BD;&#x5956;&#x4EE3;&#x7801;&#x793A;&#x4F8B;"><a name="&#x5706;&#x5F62;&#x62BD;&#x5956;&#x4EE3;&#x7801;&#x793A;&#x4F8B;" class="anchor-navigation-ex-anchor" href="#&#x5706;&#x5F62;&#x62BD;&#x5956;&#x4EE3;&#x7801;&#x793A;&#x4F8B;"><i class="fa fa-link" aria-hidden="true"></i></a>[&#x5706;&#x5F62;&#x62BD;&#x5956;]&#x4EE3;&#x7801;&#x793A;&#x4F8B;</h2>
+                                    <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css"><span class="hljs-selector-class">.lottery</span>{<span class="hljs-attribute">position</span>: relative;<span class="hljs-attribute">width</span>: <span class="hljs-number">500px</span>;<span class="hljs-attribute">height</span>: <span class="hljs-number">500px</span>;}</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;lottery&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;lotterycontent&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;//game.gtimg.cn/images/js/delottery/g.png&quot;</span><span class="hljs-string">width=&quot;488&quot;height=&quot;488&quot;alt=&quot;&#x5956;&#x54C1;&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;//game.gtimg.cn/images/js/delottery/lottery.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
+<span class="hljs-comment">//&#x70B9;&#x51FB;&#x5F00;&#x59CB;&#x62BD;&#x5956; &#x901A;&#x77E5;js  flash-&gt;js</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">callJsToStarto</span><span class="hljs-params">()</span></span>{
+    <span class="hljs-comment">//alert(11);</span>
+<span class="hljs-comment">//&#x6D4B;&#x8BD5;</span>
+    callFlashToRollo(<span class="hljs-number">2</span>);
+}
+<span class="hljs-comment">//&#x5F00;&#x53D1;&#x83B7;&#x5F97;&#x62BD;&#x5956;&#x7ED3;&#x679C; &#x901A;&#x77E5;flash&#x5F00;&#x59CB;&#x64AD;&#x653E;&#x6548;&#x679C; js-&gt;flash</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">callFlashToRollo</span><span class="hljs-params">(id)</span></span>{
+    <span class="hljs-comment">//alert(22)</span>
+    <span class="hljs-comment">//&#x901A;&#x77E5;&#x8F6C;&#x76D8;&#x8F6C;&#x5230;&#x5BF9;&#x5E94;&#x7684;&#x4E2D;&#x5956;&#x4EA7;&#x54C1;&#x7684;id &#xFF08;&#x5E8F;&#x53F7;&#x4ECE;0,1,2.....&#xFF0C;0&#x662F;&#x6307;&#x9488;&#x521D;&#x59CB;&#x6307;&#x793A;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x6CBF;&#x7740;&#x987A;&#x65F6;&#x9488;&#x7684;&#x65B9;&#x5411;&#x9012;&#x589E;&#xFF09;</span>
+    <span class="hljs-keyword">if</span>(SWFOBJo)SWFOBJo.stopRoll(id);
+}
+<span class="hljs-comment">//3&#x3001;flash&#x52A8;&#x753B;&#x5B8C;&#x6210;&#x901A;&#x77E5;js  flash-&gt;js</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">callJsToCompleteo</span><span class="hljs-params">()</span></span>{
+    SWFOBJo.enable()
+    alert(<span class="hljs-string">&apos;&#x606D;&#x559C;&#x4F60;&#x83B7;&#x5F97;&#x5927;&#x5956;XXXX&#x54DF;&#xFF01;&#xFF01;&apos;</span>);
+}
+    <span class="hljs-comment">//&#x521D;&#x59CB;&#x5316;&#x62BD;&#x5956;&#x5BF9;&#x8C61;&#x7684;SWFOBJ </span>
+    <span class="hljs-comment">//&#x8F6C;&#x76D8;&#x7684;&#x4E2D;&#x5FC3;&#x70B9;&#x5750;&#x6807;&#x4E3A;&#xFF08;0,0&#xFF09;&#xFF09;</span>
+<span class="hljs-keyword">var</span> SWFOBJo= <span class="hljs-keyword">new</span> Lottery({
+        <span class="hljs-string">&apos;r&apos;</span>:<span class="hljs-number">8</span>,<span class="hljs-comment">//&#x5956;&#x54C1;&#x603B;&#x6570;</span>
+        <span class="hljs-string">&apos;width&apos;</span>:<span class="hljs-number">488</span>,<span class="hljs-comment">//flash&#x5BBD;&#x5EA6;</span>
+        <span class="hljs-string">&apos;height&apos;</span>:<span class="hljs-number">488</span>,<span class="hljs-comment">//flash&#x9AD8;&#x5EA6;</span>
+        <span class="hljs-string">&apos;s&apos;</span>:<span class="hljs-string">&apos;//ossweb-img.qq.com/images/flash/lottery/circle/z.png&apos;</span>,<span class="hljs-comment">//&#x5F00;&#x59CB;&#x62BD;&#x5956;&#x6309;&#x94AE;&#x56FE;&#x7247;</span>
+        <span class="hljs-string">&apos;bx&apos;</span>:<span class="hljs-number">0</span>,<span class="hljs-comment">//&#x5706;&#x76D8;&#x7684;&#x56FE;&#x7247;&#x4F4D;&#x7F6E;x&#x5750;&#x6807; &#xFF08;&#x8F6C;&#x76D8;&#x7684;&#x4E2D;&#x5FC3;&#x70B9;&#x5750;&#x6807;&#x4E3A;&#xFF08;0,0&#xFF09;&#xFF09;</span>
+        <span class="hljs-string">&apos;by&apos;</span>:<span class="hljs-number">0</span>,<span class="hljs-comment">//&#x5706;&#x76D8;&#x7684;&#x56FE;&#x7247;&#x4F4D;&#x7F6E;y&#x5750;&#x6807;</span>
+        <span class="hljs-string">&apos;sx&apos;</span>:<span class="hljs-number">0</span>,<span class="hljs-comment">//&#x5F00;&#x59CB;&#x62BD;&#x5956;&#x6309;&#x94AE;x&#x5750;&#x6807;</span>
+        <span class="hljs-string">&apos;sy&apos;</span>:<span class="hljs-number">0</span>,<span class="hljs-comment">//&#x5F00;&#x59CB;&#x62BD;&#x5956;&#x6309;&#x94AE;y&#x5750;&#x6807;</span>
+        <span class="hljs-string">&apos;contentId&apos;</span> : <span class="hljs-string">&apos;swfcontent&apos;</span>,<span class="hljs-comment">//&#x5D4C;&#x5165;swf &#x7684;div&#x5C42;&#x7684; id </span>
+        <span class="hljs-string">&apos;onClickRollEvent&apos;</span> : callJsToStarto,<span class="hljs-comment">//&#x5BF9;&#x5E94;&#x4E0A;&#x9762;&#x63A5;&#x53E3;</span>
+        <span class="hljs-string">&apos;onCompleteRollEvent&apos;</span>:callJsToCompleteo <span class="hljs-comment">//&#x5BF9;&#x5E94;&#x4E0A;&#x9762;&#x63A5;&#x53E3;</span>
+});
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+                                    <p>&#x7528;&#x6CD5;&#x793A;&#x4F8B;&#xFF1A;<strong><a href="javascript:if(confirm(%27http://game.gtimg.cn/images/js/delottery/index.html  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27http://game.gtimg.cn/images/js/delottery/index.html#round%27" tppabs="http://game.gtimg.cn/images/js/delottery/index.html#round" target="_blank">http://game.gtimg.cn/images/js/delottery/index.html#round</a></strong></p>
+                                </section>
+                            </div>
+                            <div class="search-results">
+                                <div class="has-results">
+                                    <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+                                    <ul class="search-results-list"></ul>
+                                </div>
+                                <div class="no-results">
+                                    <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="tglogin.html" tppabs="https://tgideas.qq.com/doc/frontend/component/common/tglogin.html" class="navigation navigation-prev " aria-label="Previous page: TGLogin.js">
+                    <i title="上一章" class="fa fa-angle-left"></i>
+                </a>
+            <a href="txplayer.html" tppabs="https://tgideas.qq.com/doc/frontend/component/common/txplayer.html" class="navigation navigation-next " aria-label="Next page: 腾讯视频">
+                    <i title="下一章" class="fa fa-angle-right"></i>
+                </a>
+        </div>
+        <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({ "page": { "title": "抽奖组件", "level": "2.1.5", "depth": 2, "next": { "title": "腾讯视频", "level": "2.1.6", "depth": 2, "path": "https://tgideas.qq.com/doc/frontend/component/common/component/common/txplayer.md", "ref": "https://tgideas.qq.com/doc/frontend/component/common/component/common/txplayer.md", "articles": [] }, "previous": { "title": "TGLogin-1.js" /*tpa=https://tgideas.qq.com/doc/frontend/component/common/TGLogin.js*/ , "level": "2.1.4", "depth": 2, "path": "https://tgideas.qq.com/doc/frontend/component/common/component/common/tglogin.md", "ref": "https://tgideas.qq.com/doc/frontend/component/common/component/common/tglogin.md", "articles": [] }, "dir": "ltr" }, "config": { "plugins": ["-lunr", "-search", "ribbon", "https://tgideas.qq.com/doc/frontend/component/common/anchor-navigation-ex@1.0.10", "copy-code-button@0.0.2", "alerts@0.2.0", "search-pro@2.0.2", "-expandable-chapters", "toggle-chapters@0.0.3", "-anchorjs"], "styles": { "website": "website-9.css" /*tpa=https://tgideas.qq.com/doc/frontend/component/common/styles/website.css*/ , "pdf": "pdf-7.css" /*tpa=https://tgideas.qq.com/doc/frontend/component/common/styles/pdf.css*/ , "epub": "epub-7.css" /*tpa=https://tgideas.qq.com/doc/frontend/component/common/styles/epub.css*/ , "mobi": "mobi-7.css" /*tpa=https://tgideas.qq.com/doc/frontend/component/common/styles/mobi.css*/ , "ebook": "ebook-7.css" /*tpa=https://tgideas.qq.com/doc/frontend/component/common/styles/ebook.css*/ , "print": "print-7.css" /*tpa=https://tgideas.qq.com/doc/frontend/component/common/styles/print.css*/ }, "pluginsConfig": { "search-pro": { "cutWordLib": "nodejieba", "defineWord": ["Gitbook Use"] }, "fontsettings": { "theme": "white", "family": "sans", "size": 2 }, "highlight": {}, "anchor-navigation-ex": { "associatedWithSummary": true, "float": { "level1Icon": "", "level2Icon": "", "level3Icon": "", "showLevelIcon": false }, "mode": "float", "multipleH1": true, "pageTop": { "level1Icon": "", "level2Icon": "", "level3Icon": "", "showLevelIcon": false }, "printLog": false, "showLevel": false }, "ribbon": { "appendFilepath": false, "color": "blue", "icon": "fa-external-link", "text": "我要纠错", "url": "javascript:;" }, "alerts": {}, "copy-code-button": {}, "sharing": { "facebook": false, "twitter": false, "google": false, "weibo": false, "instapaper": false, "vk": false, "all": [] }, "theme-default": { "styles": { "website": "website-9.css" /*tpa=https://tgideas.qq.com/doc/frontend/component/common/styles/website.css*/ , "pdf": "pdf-7.css" /*tpa=https://tgideas.qq.com/doc/frontend/component/common/styles/pdf.css*/ , "epub": "epub-7.css" /*tpa=https://tgideas.qq.com/doc/frontend/component/common/styles/epub.css*/ , "mobi": "mobi-7.css" /*tpa=https://tgideas.qq.com/doc/frontend/component/common/styles/mobi.css*/ , "ebook": "ebook-7.css" /*tpa=https://tgideas.qq.com/doc/frontend/component/common/styles/ebook.css*/ , "print": "print-7.css" /*tpa=https://tgideas.qq.com/doc/frontend/component/common/styles/print.css*/ }, "showLevel": false }, "anchorjs": { "selector": "h2,h3,h4,h5", "icon": "#", "placement": "left", "visible": "always", "class": "custom-class another-one", "truncate": 64, "ariaLabel": "Anchor" }, "toggle-chapters": {} }, "theme": "default", "pdf": { "pageNumbers": true, "fontSize": 12, "fontFamily": "Arial", "paperSize": "a4", "chapterMark": "pagebreak", "pageBreaksBefore": "/", "margin": { "right": 62, "left": 62, "top": 56, "bottom": 56 } }, "structure": { "langs": "https://tgideas.qq.com/doc/frontend/component/common/LANGS.md", "readme": "https://tgideas.qq.com/doc/frontend/component/common/README.md", "glossary": "https://tgideas.qq.com/doc/frontend/component/common/GLOSSARY.md", "summary": "https://tgideas.qq.com/doc/frontend/component/common/SUMMARY.md" }, "variables": {}, "title": "TGideas文档库", "language": "zh-hans", "links": { "sidebar": {}, "sharing": { "google": false, "facebook": false, "twitter": false, "weibo": false, "all": false } }, "gitbook": "*" }, "file": { "path": "https://tgideas.qq.com/doc/frontend/component/common/component/common/lottery.md", "type": "markdown" }, "gitbook": { "version": "3.2.3" }, "basePath": "../..", "book": { "language": "" } });
+        });
+        </script>
+        <script>
+        var _mtac = {};
+        (function() {
+            var mta = document.createElement("script");
+            mta.src = "js/stats.js-v2.0.2.js" /*tpa=https://pingjs.qq.com/h5/stats.js?v2.0.2*/ ;
+            mta.setAttribute("name", "MTAH5");
+            mta.setAttribute("sid", "500616672");
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(mta, s);
+        })();
+        </script>
+        <script>
+        document.querySelector('.book-header').append(document.querySelector('#book-search-input'));
+        </script>
+    </div>
+    <script src="js/gitbook.js" tppabs="https://tgideas.qq.com/doc/frontend/gitbook/gitbook.js"></script>
+    <script src="js/theme.js" tppabs="https://tgideas.qq.com/doc/frontend/gitbook/theme.js"></script>
+    <script src="js/plugin.js" tppabs="https://tgideas.qq.com/doc/frontend/gitbook/gitbook-plugin-ribbon/plugin.js"></script>
+    <script src="js/qrcode.min.js" tppabs="https://tgideas.qq.com/doc/frontend/gitbook/gitbook-plugin-ribbon/qrcode.min.js"></script>
+    <script src="js/toggle.js" tppabs="https://tgideas.qq.com/doc/frontend/gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+    <script src="js/plugin-1.js" tppabs="https://tgideas.qq.com/doc/frontend/gitbook/gitbook-plugin-alerts/plugin.js"></script>
+    <script src="js/jquery.mark.min.js" tppabs="https://tgideas.qq.com/doc/frontend/gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+    <script src="js/search.js" tppabs="https://tgideas.qq.com/doc/frontend/gitbook/gitbook-plugin-search-pro/search.js"></script>
+    <script src="js/toggle-1.js" tppabs="https://tgideas.qq.com/doc/frontend/gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+    <script src="js/buttons.js" tppabs="https://tgideas.qq.com/doc/frontend/gitbook/gitbook-plugin-sharing/buttons.js"></script>
+    <script src="js/fontsettings.js" tppabs="https://tgideas.qq.com/doc/frontend/gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+</body>
+
+</html>
